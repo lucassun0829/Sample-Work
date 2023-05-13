@@ -1,0 +1,28 @@
+CREATE sexy 3 int int int num1 num2 num3
+GENERATE FOR sexy hash INDEX ON num1
+PRINT FROM sexy 3 num1 num2 num3 WHERE num1 = 0
+DELETE FROM sexy WHERE num1 = 1
+JOIN sexy and sexy WHERE num1 = num2 AND PRINT 3 num1 1 num2 1 num3 1
+GENERATE FOR sexy bst INDEX ON num1
+PRINT FROM sexy 3 num1 num2 num3 WHERE num1 = 0
+DELETE FROM sexy WHERE num1 = 1
+JOIN sexy and sexy WHERE num1 = num2 AND PRINT 3 num1 1 num2 1 num3 1
+INSERT INTO sexy 8 ROWS
+0 0 0
+0 0 1
+0 1 0
+0 1 1
+1 0 0
+1 0 1
+1 1 0
+1 1 1
+GENERATE FOR sexy hash INDEX ON num1
+PRINT FROM sexy 3 num1 num2 num3 WHERE num1 = 0
+DELETE FROM sexy WHERE num1 = 1
+JOIN sexy and sexy WHERE num1 = num2 AND PRINT 3 num1 1 num2 1 num3 1
+GENERATE FOR sexy bst INDEX ON num1
+PRINT FROM sexy 3 num1 num2 num3 WHERE num1 = 0
+DELETE FROM sexy WHERE num1 = 1
+JOIN sexy and sexy WHERE num1 = num2 AND PRINT 3 num1 1 num2 1 num3 1
+REMOVE sexy
+QUIT

@@ -1,0 +1,55 @@
+CREATE 281class 3 string string bool emotion person Y/N
+CREATE sexy 4 string int double bool snum inum dnum is_num?
+DELETE FROM sexy WHERE dnum < 999999
+DELETE FROM sexy WHERE inum > 500000
+PRINT FROM sexy 4 snum inum dnum is_num? WHERE inum > 100000
+PRINT FROM sexy 4 snum inum dnum is_num? WHERE dnum < 500000
+PRINT FROM sexy 4 snum inum dnum is_num? Y/N ALL
+PRINT FROM 281class 3 emotion person Y/N WHERE person < a
+PRINT FROM 281class 3 emotion person Y/N WHERE person > z
+PRINT FROM 281class 3 emotion person Y/N ALL
+INSERT INTO 281class 3 ROWS
+happy Paoletti true
+sad Darden false
+stressed Lucas true
+INSERT INTO 281class 3 ROWS
+happy Paoletti true
+sad Darden false
+stressed Lucas true
+PRINT FROM 281class 3 emotion person WHERE emotion < a
+PRINT FROM 281class 3 emotion person WHERE person > zz
+INSERT INTO 281class 10 ROWS
+stressed students false
+stressed students true
+happy Darden true
+sad Darden false
+stressed Lucas true
+happy Sith false
+happy Sith true
+woho ben true
+woho zed true
+busy students true
+JOIN sexy and 281class WHERE snum = person AND PRINT 3 inum 1 dnum 1 snum 1
+GENERATE FOR cities hash INDEX ON is_num?
+PRINT FROM sexy 4 snum dnum inum WHERE is_num? = true
+INSERT INTO sexy 5 ROWS
+0 1 1.0 true
+2 2 2.3 true
+3 3 3.3 true
+4 4 4.4 false
+5 2 2.3 false
+GENERATE FOR cities hash INDEX ON is_num?
+PRINT FROM sexy 4 snum dnum inum WHERE is_num? = true
+DELETE FROM sexy WHERE is_num? = true
+PRINT FROM sexy 4 snum dnum inum WHERE is_num? = true
+PRINT FROM sexy 4 snum dnum inum WHERE snum = 0
+PRINT FROM sexy 4 snum dnum inum WHERE dnum > 0
+GENERATE FOR cities bst INDEX ON is_num?
+PRINT FROM sexy 4 snum dnum inum WHERE is_num? = true
+PRINT FROM sexy 4 snum dnum inum WHERE is_num? > true
+PRINT FROM sexy 4 snum dnum inum WHERE is_num? < true
+DELETE FROM sexy WHERE is_num? < true
+PRINT FROM sexy 4 snum dnum inum WHERE is_num? < true
+PRINT FROM sexy 4 snum dnum inum WHERE snum = 0
+PRINT FROM sexy 4 snum dnum inum WHERE dnum > 0
+QUIT
